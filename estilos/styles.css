@@ -20,13 +20,23 @@ main div .titulo{
 
 main .prato, main .bebida, main .sobremesa{
     background-color: #ffffff;
+   /* background-color: #ffffff;*/
+   
+
     width: 172px;
     height: 216px;
 
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     margin-right: 16px;
+
+    
 }
+
+.prato-selecionado, .bebida-selecionado, .sobremesa-selecionado{
+    border: 3px solid #32B72F;
+}
+
 
 .container-pratos, .container-bebidas, .container-sobremesas{
     /*background-color: red;*/
@@ -40,6 +50,7 @@ main .prato, main .bebida, main .sobremesa{
 }
 
 .comida{
+    
     margin-left: 14px;
     margin-top: 18px;
 }
@@ -68,13 +79,17 @@ main .prato, main .bebida, main .sobremesa{
 }
 
 .comida-preco{
+    width: 100%;
+    display: flex;
+}
+
+.comida-preco .pratoValor, .bebidaValor, .sobremesaValor{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    font-weight: bold   ;
+    font-weight: bold;
 }
-
 .espaco{
     height: 120px;
 }

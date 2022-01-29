@@ -1,0 +1,87 @@
+.confirmacao-pedido{
+
+    font-family: Roboto;
+    font-style: normal;
+
+    width: 377px;
+    height: 357px;
+
+    background-color: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+
+    position: fixed;
+    top: 25%;
+    left: 20vw  ;
+}
+
+.confirmacao-pedido .confirme{
+    text-align: center;
+    margin-top: 21px;
+
+    color: #FFFFFF;    
+    font-weight: bold;
+    font-size: 22px; 
+}
+
+.confirmacao-pedido .pedido{
+    margin-top: 28px;
+
+
+}
+
+.confirmacao-pedido .prato, .confirmacao-pedido .bebida, .confirmacao-pedido .sobremesa, .confirmacao-pedido .total{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 13px;
+
+    color: #FFFFFF; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botoes .tudo-certo{
+    color: #50D074;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+
+    width: 329px;
+    height: 52px;
+
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: none;
+
+}
+
+.botoes .cancelar{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+
+    width: 329px;
+    height: 52px;
+
+    background-color: #50D074;
+    border: none;
+}
+
+.escondido {
+    display: none;
+}

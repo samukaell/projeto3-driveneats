@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./estilos/styles.css">
     <link rel="stylesheet" href="./estilos/styles-header.css">
     <link rel="stylesheet" href="./estilos/styles-footer.css">
+    <link rel="stylesheet" href="./estilos/styles-tela-confirmação.css">
     <link rel="stylesheet" href="./estilos/reset.css">
 
     <!--Fonts-->
@@ -33,109 +34,99 @@
         <div class="pratos">
             <p class="titulo">Primeiro, seu prato</p>
             <div class="container-pratos">
-                 <!--Prato 1-->
-                <div class="prato">
+                <div class="prato" onclick="selecaoPrato(0)">
                     <div class="comida">
                         <img src="./assests/frango_yin_yang 1.png" alt="frango yin yang" class="comida-imagem">
                         <p class="comida-nome">Frango Yin Yang</p>
                         <p class="comida-descrisao">Um pouco de batata, um pouco de salada</p>
-                        <p class="comida-preco">R$ 14,90</p>
+                        <p class="comida-preco">R$ <p class="pratoValor">14.90</p></p>
                     </div>
                 </div>
-                 <!--Prato 2-->
-                 <div class="prato">
-                    <div class="comida">
-                        <img src="./assests/frango_yin_yang 1.png" alt="frango yin yang" class="comida-imagem">
-                        <p class="comida-nome">Frango Yin Yang</p>
-                        <p class="comida-descrisao">Um pouco de batata, um pouco de salada</p>
-                        <p class="comida-preco">R$ 14,90</p>
-                    </div>
-                </div>
-                 <!--Prato 3-->
-                 <div class="prato">
-                    <div class="comida">
-                        <img src="./assests/frango_yin_yang 1.png" alt="frango yin yang" class="comida-imagem">
-                        <p class="comida-nome">Frango Yin Yang</p>
-                        <p class="comida-descrisao">Um pouco de batata, um pouco de salada</p>
-                        <p class="comida-preco">R$ 14,90</p>
-                    </div>
-                </div>      
 
-                 <!--Prato 4-->
-                 <div class="prato">
+                <div class="prato" onclick="selecaoPrato(1)">
                     <div class="comida">
                         <img src="./assests/frango_yin_yang 1.png" alt="frango yin yang" class="comida-imagem">
                         <p class="comida-nome">Frango Yin Yang</p>
                         <p class="comida-descrisao">Um pouco de batata, um pouco de salada</p>
-                        <p class="comida-preco">R$ 14,90</p>
+                        <p class="comida-preco">R$ <p class="pratoValor">14.90</p></p>
                     </div>
                 </div>
+
+                <div class="prato" onclick="selecaoPrato(2)">
+                    <div class="comida">
+                        <img src="./assests/frango_yin_yang 1.png" alt="frango yin yang" class="comida-imagem">
+                        <p class="comida-nome">Frango Yin Yang</p>
+                        <p class="comida-descrisao">Um pouco de batata, um pouco de salada</p>
+                        <p class="comida-preco">R$ <p class="pratoValor">14.90</p></p>
+                    </div>
+                </div>
+                
             </div>
         </div>
-
+        
         <div class="bebidas">
             <p class="titulo">Agora, sua bebida</p>
             <div class="container-bebidas">
                 <!--bebida 1-->
-                <div class="bebida">
+                <div class="bebida" onclick="selecionarBebida(0)">
                     <div class="comida">
                         <img src="./assests/coquinha_gelada 1.png" alt="coquinha gelada" class="comida-imagem">
                         <p class="comida-nome">Coquinha gelada</p>
                         <p class="comida-descrisao">Lata 350ml</p>
-                        <p class="comida-preco">R$ 4,90</p>
+                        <p class="comida-preco">R$ <p class="bebidaValor">4.90</p></p>
                     </div>
                 </div>  
                 
                 <!--bebida 2-->
-                <div class="bebida">
+                <div class="bebida" onclick="selecionarBebida(1)">
                     <div class="comida">
                         <img src="./assests/coquinha_gelada 1.png" alt="coquinha gelada" class="comida-imagem">
                         <p class="comida-nome">Coquinha gelada</p>
                         <p class="comida-descrisao">Lata 350ml</p>
-                        <p class="comida-preco">R$ 4,90</p>
+                        <p class="comida-preco">R$ <p class="bebidaValor">4.90</p></p>
                     </div>
                 </div>
 
                 <!--bebida 3-->
-                <div class="bebida">
+                <div class="bebida" onclick="selecionarBebida(2)">
                     <div class="comida">
                         <img src="./assests/coquinha_gelada 1.png" alt="coquinha gelada" class="comida-imagem">
                         <p class="comida-nome">Coquinha gelada</p>
                         <p class="comida-descrisao">Lata 350ml</p>
-                        <p class="comida-preco">R$ 4,90</p>
+                        <p class="comida-preco">R$ <p class="bebidaValor">4.90</p></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="sobremesas">
-            <p class="titulo">Agora, sua bebida</p>
+            <p class="titulo">Agora, sua sobremesa</p>
             <div class="container-sobremesas">
                 <!--sobremesa 1-->
-                <div class="sobremesa">
+                <div class="sobremesa" onclick="selecionarSobremesa(0)">
                     <div class="comida">
                         <img src="./assests/pudim 1.png" alt="pudim" class="comida-imagem">
                         <p class="comida-nome">Pudim</p>
                         <p class="comida-descrisao">Apenas pudim</p>
-                        <p class="comida-preco">R$ 7,90</p>
+                        <p class="comida-preco">R$ <p class="sobremesaValor">7.90</p></p>
                     </div>
                 </div> 
                 <!--sobremesa 2-->
-                <div class="sobremesa">
+                <div class="sobremesa" onclick="selecionarSobremesa(1)">
                     <div class="comida">
                         <img src="./assests/pudim 1.png" alt="pudim" class="comida-imagem">
                         <p class="comida-nome">Pudim</p>
                         <p class="comida-descrisao">Apenas pudim</p>
-                        <p class="comida-preco">R$ 7,90</p>
+                        <p class="comida-preco">R$ <p class="sobremesaValor">7.90</p></p>
                     </div>
                 </div> 
                 <!--sobremesa 3-->
-                <div class="sobremesa">
+                <div class="sobremesa" onclick="selecionarSobremesa(2)">
                     <div class="comida">
                         <img src="./assests/pudim 1.png" alt="pudim" class="comida-imagem">
                         <p class="comida-nome">Pudim</p>
                         <p class="comida-descrisao">Apenas pudim</p>
-                        <p class="comida-preco">R$ 7,90</p>
+                        <p class="comida-preco">R$ <p class="sobremesaValor">7.90</p></p>
                     </div>
                 </div> 
             </div>
@@ -149,14 +140,65 @@
 
     <div class="espaco"></div>
 
+    <div class="confirmacao-pedido escondido">
+        <p class="confirme">Confirme seu pedido</p>
+        <div class="pedido">
+            <div class="prato pConfirme">
+                <p class="nome">Prato</p>
+                <p class="valor">0.0</p>
+            </div>
+            <div class="bebida bConfirme">
+                <p class="nome">bebida</p>
+                <p class="valor">0.00</p>
+            </div>
+            <div class="sobremesa sConfirme">
+                <p class="nome">sobremesa</p>
+                <p class="valor">0.00</p>
+            </div>
+            <div class="total tConfirme">
+                <p class="nome">TOTAL</p>
+                <p class="valor">0.00</p>
+            </div>
+        </div>
+        <div class="botoes">
+            <button class="tudo-certo">Tudo certo, pode pedir!</button>
+            <button class="cancelar" onclick="cancelarPedido()">Cancelar</button>
+        </div>
+    </div>
+
     <footer>
-       <div class="botao">
-            <button>
+       <div class="botao" onclick="test()">
+            <button onclick="finalizarPedido()">
                 Selecione os 3 itens
                 para fechar o pedido
             </button>
        </div>
     </footer>
     
+    <script src="./script.js"></script>
 </body>
 </html>
+
+<!-- PRATOS
+ 
+ 
+ 
+ <div class="prato" onclick="selecaoPrato()">
+    <div class="comida">
+        <img src="./assests/frango_yin_yang 1.png" alt="frango yin yang" class="comida-imagem">
+        <p class="comida-nome">Frango Yin Yang</p>
+        <p class="comida-descrisao">Um pouco de batata, um pouco de salada</p>
+        <p class="comida-preco">R$ 14,90</p>
+    </div>
+</div>
+ 
+ <div class="prato">
+    <div class="comida">
+        <img src="./assests/frango_yin_yang 1.png" alt="frango yin yang" class="comida-imagem">
+        <p class="comida-nome">Frango Yin Yang</p>
+        <p class="comida-descrisao">Um pouco de batata, um pouco de salada</p>
+        <p class="comida-preco">R$ 14,90</p>
+    </div>
+</div>
+
+-->

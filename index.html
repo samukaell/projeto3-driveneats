@@ -7,6 +7,7 @@
 
     <!--Estilos CSS-->
     <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="stylesheet" href="./estilos/styles-tela-cadastro.css">
     <link rel="stylesheet" href="./estilos/styles-header.css">
     <link rel="stylesheet" href="./estilos/styles-footer.css">
     <link rel="stylesheet" href="./estilos/styles-tela-confirmação.css">
@@ -140,31 +141,58 @@
 
     <div class="espaco"></div>
 
-    <div class="confirmacao-pedido escondido">
-        <p class="confirme">Confirme seu pedido</p>
-        <div class="pedido">
-            <div class="prato pConfirme">
-                <p class="nome">Prato</p>
-                <p class="valor">0.0</p>
+    <div class="fundo-branco escondidoFundo">
+        <div class="confirmacao-pedido escondido">
+            <p class="confirme">Confirme seu pedido</p>
+
+            <div class="cliente">
+                
             </div>
-            <div class="bebida bConfirme">
-                <p class="nome">bebida</p>
-                <p class="valor">0.00</p>
+
+            <div class="pedido">
+                <div class="prato pConfirme">
+                    <p class="nome">Prato</p>
+                    <p class="valor">0.0</p>
+                </div>
+                <div class="bebida bConfirme">
+                    <p class="nome">bebida</p>
+                    <p class="valor">0.00</p>
+                </div>
+                <div class="sobremesa sConfirme">
+                    <p class="nome">sobremesa</p>
+                    <p class="valor">0.00</p>
+                </div>
+                <div class="total tConfirme">
+                    <p class="nome">TOTAL</p>
+                    <p class="valor">0.00</p>
+                </div>
             </div>
-            <div class="sobremesa sConfirme">
-                <p class="nome">sobremesa</p>
-                <p class="valor">0.00</p>
+            <div class="botoes">
+                <button class="tudo-certo">Tudo certo, pode pedir!</button>
+                <button class="cancelar" onclick="cancelarPedido()">Cancelar</button>
             </div>
-            <div class="total tConfirme">
-                <p class="nome">TOTAL</p>
-                <p class="valor">0.00</p>
-            </div>
-        </div>
-        <div class="botoes">
-            <button class="tudo-certo">Tudo certo, pode pedir!</button>
-            <button class="cancelar" onclick="cancelarPedido()">Cancelar</button>
         </div>
     </div>
+
+    <div class="cadastro-fundo" >
+        <div class="cadastro">
+            <p class="logo">DrivenEats</p>
+            
+            <div class="formulario">
+                <p class="nome">Qual seu nome?</p>
+                <input class="input-nome" id="nome" name="nome" type="text" placeholder="Ex: Samuel Alcântara" >
+                
+                <p class="endereco">informe seu endereço</p>
+                <input type="text" class="input-endereco" id="endereco" placeholder="Ex: Carpina/Bairro Novo">
+
+                <p class="telefone">numero de whatsapp</p>
+                <input type="text" class="input-telefone" id="telefone" placeholder="Ex: 9987654321">
+            </div>
+
+            <button class="botao-cadastro" onclick="confirmarCadastro()">COMER!!!</button>
+        </div>
+    </div>
+    
 
     <footer>
        <div class="botao" onclick="test()">

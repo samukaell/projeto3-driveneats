@@ -13,6 +13,14 @@ let sobremesa = {
     comidaPreco:null
 }
 
+/*Cadastro */
+
+let usuario = {
+    nome:null,
+    endereco:null,
+    telefone:null
+}
+
 
 function selecaoComida(comida,codComida) {
     const selecionado = document.querySelector("."+comida+"-selecionado");
@@ -71,6 +79,16 @@ function passandoPedidos(comida,nomePedido,valorPedido){
     `
 }
 
+function passarInforUser(){
+    const cliente = document.querySelector(".cliente");
+    cliente.innerHTML = 
+    `
+        <p class="nome-cliente">Entregar à ${usuario.nome}</p>
+        <p class="endereco-cliente">Para entregar no ${usuario.endereco}</p>
+
+    `
+}
+
 function finalizarPedido(){
    if(
        prato.comidaNome !== null &&
@@ -78,8 +96,14 @@ function finalizarPedido(){
        sobremesa.comidaNome !== null
     )
    {
-    const confimar = document.querySelector(".escondido");
-    confimar.classList.remove("escondido"); 
+
+    passarInforUser();
+
+    const exibir = document.querySelector(".escondido");
+    exibir.classList.remove("escondido"); 
+
+    const exibirFundo = document.querySelector(".escondidoFundo");
+    exibirFundo.classList.remove("escondidoFundo"); 
 
     passandoPedidos("pConfirme",prato.comidaNome,prato.comidaPreco);
     passandoPedidos("bConfirme",bebida.comidaNome,bebida.comidaPreco);
@@ -88,11 +112,40 @@ function finalizarPedido(){
     let total = parseInt(prato.comidaPreco)+parseInt(bebida.comidaPreco)+parseInt(sobremesa.comidaPreco);
     passandoPedidos("tConfirme","TOTAL",total.toFixed(2));
    }
+
 }
 
 
 function cancelarPedido(){
-    const confimar = document.querySelector(".confirmacao-pedido");
-    confimar.classList.add("escondido");
+    const exibir = document.querySelector(".confirmacao-pedido");
+    exibir.classList.add("escondido");
+
+    const exibirFundo = document.querySelector(".fundo-branco");
+    exibirFundo.classList.add("escondidoFundo");
+
+}
+
+/*Cadastro*/ 
+
+
+
+function confirmarCadastro(){
+    const userName = document.querySelector("#nome");
+    usuario.nome = userName.value;
+
+    const userEndereco = document.querySelector("#endereco");
+    usuario.endereco = userEndereco.value;
+
+    const userTelefone= document.querySelector("#telefone");
+    usuario.telefone = userTelefone.value;
+
+    if(usuario.nome !== "" && usuario.endereco !== "" && usuario.telefone !== ""){
+
+        const cadastro = document.querySelector(".cadastro ");
+        cadastro.classList.add("escondido-cadastro");
+    
+        const cadastroFundo = document.querySelector(".cadastro-fundo");
+        cadastroFundo.classList.add("escondido-cadastro-fundo");
+    }
 }
 

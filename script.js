@@ -124,7 +124,7 @@ function confirmarCompra() {
     - Prato: ${prato.comidaNome}
     - Bebida: ${bebida.comidaNome}
     - Sobremesa: ${sobremesa.comidaNome}
-    Total: R$ ${total}`
+    Total: R$ ${total.toFixed(2)}`
     )}` 
 }
 

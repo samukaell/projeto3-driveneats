@@ -75,7 +75,7 @@ function passandoPedidos(comida,nomePedido,valorPedido){
     pedidoNome.innerHTML = 
     `
         <p class="nome">${nomePedido}</p>
-        <p class="valor">${valorPedido}</p>
+        <p class="valor">R$ ${valorPedido}</p>
     `
 }
 
@@ -115,6 +115,18 @@ function finalizarPedido(){
 
 }
 
+function confirmarCompra() {
+
+    let total = parseInt(prato.comidaPreco)+parseInt(bebida.comidaPreco)+parseInt(sobremesa.comidaPreco);
+
+    window.location.href = `https://wa.me/55${usuario.telefone}?text=${encodeURIComponent(
+    `Olá, gostaria de fazer o pedido ${usuario.nome}
+    - Prato: ${prato.comidaNome}
+    - Bebida: ${bebida.comidaNome}
+    - Sobremesa: ${sobremesa.comidaNome}
+    Total: R$ ${total}`
+    )}` 
+}
 
 function cancelarPedido(){
     const exibir = document.querySelector(".confirmacao-pedido");

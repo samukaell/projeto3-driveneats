@@ -46,7 +46,7 @@ main .prato, main .bebida, main .sobremesa{
     align-items: center;
     margin-bottom: 20px;
 
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .comida{
@@ -81,9 +81,32 @@ main .prato, main .bebida, main .sobremesa{
 .comida-preco{
     width: 100%;
     display: flex;
+
 }
 
-.comida-preco .pratoValor, .bebidaValor, .sobremesaValor{
+ .pratoValor,.bebidaValor,.sobremesaValor{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+.comida-preco{
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.comida .check{
+    font-size: 20px;
+    color: #32B72F;
+}
+
+.comida .valor{
+    display: flex;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;

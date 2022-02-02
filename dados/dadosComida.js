@@ -91,7 +91,7 @@ function criarComida (nome,comida, dadosComida,selecao,valor){
     
     for(i = 0; i< dadosComida.length ; i++){
         comida =comida+ `
-        <div class="${nome}" onclick="${selecao}(${i})">
+        <div class="${nome}" data-identifier="food-option" onclick="${selecao}(${i})">
             <div class="comida">
                 <img src="${dadosComida[i].imageSrc}" alt="${dadosComida[i].comidaNome}" class="comida-imagem">
                 <p class="comida-nome">${dadosComida[i].comidaNome}</p>
